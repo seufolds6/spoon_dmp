@@ -1,3 +1,5 @@
+This repository uses the code from the pydmps repository (https://github.com/studywolf/pydmps) and runs it on four spoon tasks: scooping, flipping, flattening, and stirring.
+
 pydmps
 ======
 
@@ -5,4 +7,4 @@ Dynamic movement primitives (DMPs) are a method of trajectory control / planning
 
 This repository is a Python implementation of DMPs, with accompanying tutorials and applications that can be found at http://studywolf.wordpress.com/category/robotics/dynamic-movement-primitive/
 
-All that's required for the installation and running of the code is ```numpy```. To run the test code you will also need ```matplotlib``` for displaying the results.
+All that's required for the installation and running of the code is ``numpy``. To run the test code you will also need ``matplotlib`` for displaying the results.

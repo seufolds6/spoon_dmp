@@ -1,9 +1,10 @@
 import numpy as np
-import matplotlib.pyplot as plt
 from dmp_discrete import *
 
-x_vals = np.linspace(-1, 2, 500)
-y_vals = x_vals*(x_vals - 1)
+time_steps = 100
+t = np.linspace(0, 1, time_steps)
+x_vals = np.full(time_steps, 0.5)
+y_vals = 0.0 + t
 y_des = np.vstack((x_vals, y_vals))
 
 # Normalize the trajectory to start from the origin
