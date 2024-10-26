@@ -15,6 +15,5 @@ y_track = []
 dy_track = []
 ddy_track = []
 
-# Imitate the path specified by y = x^2 - x
 dmp.imitate_path(y_des=y_des, plot=True)
 y_track, dy_track, ddy_track = dmp.rollout()
