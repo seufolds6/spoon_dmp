@@ -16,16 +16,15 @@ dmp.imitate_path(y_des=y_des, plot=False)
 y_track, dy_track, ddy_track = dmp.rollout()
 plt.figure(1, figsize=(6, 6))
 
-t = np.linspace(0, 1, 100)
-x = np.full(100, 0.5)
-y = 0.0 + t
+x = np.linspace(0, 1, 100)
+y = x
 plt.plot(x, y, "r", lw=2, label="Demonstration")
 
 plt.plot(y_track[:, 0], y_track[:, 1], "b", lw=2, label="DMP Rollout")
 
 plt.title("DMP for Flattening Task")
 plt.axis("equal")
-plt.xlim([-0.5, 1])
+plt.xlim([-0.5, 1.5])
 plt.ylim([-0.5, 1.5])
 plt.legend()
 plt.show()

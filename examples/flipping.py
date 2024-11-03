@@ -16,16 +16,15 @@ dmp.imitate_path(y_des=y_des, plot=False)
 y_track, dy_track, ddy_track = dmp.rollout()
 plt.figure(1, figsize=(6, 6))
 
-theta = np.linspace(np.pi / 100, np.pi, 100)
-x = 0.5 * np.cos(theta) + 0.5
-y = np.sin(theta)
+x = np.linspace(-0.4, 2, 100)
+y = -x*(x - 1)
 plt.plot(x, y, "r", lw=2, label="Demonstration")
 
 plt.plot(y_track[:, 0], y_track[:, 1], "b", lw=2, label="DMP Rollout")
 
 plt.title("DMP for Flipping Task")
 plt.axis("equal")
-plt.xlim([-2, 2])
-plt.ylim([-0.5, 2])
+plt.xlim([-2, 3])
+plt.ylim([-3, 3])
 plt.legend()
 plt.show()
