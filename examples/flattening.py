@@ -19,12 +19,13 @@ plt.figure(1, figsize=(6, 6))
 t = np.linspace(0, 1, 100)
 x = np.full(100, 0.5)
 y = 0.0 + t
-plt.plot(x, y, "r", lw=2, label=r"$y = x \cdot (x - 1)$")
+plt.plot(x, y, "r", lw=2, label="Demonstration")
 
-plt.plot(y_track[:, 0], y_track[:, 1], "b", lw=2)
+plt.plot(y_track[:, 0], y_track[:, 1], "b", lw=2, label="DMP Rollout")
 
-plt.title("DMP system")
+plt.title("DMP for Flattening Task")
 plt.axis("equal")
-plt.xlim([-2, 2])
-plt.ylim([-2, 2])
+plt.xlim([-0.5, 1])
+plt.ylim([-0.5, 1.5])
+plt.legend()
 plt.show()
