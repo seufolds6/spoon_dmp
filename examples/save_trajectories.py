@@ -11,9 +11,9 @@ def save_traj(n, filename, task_name):
         x = np.linspace(-0.4, 2, n)
         y = -x*(x - 1)
     elif task_name == "stirring":
-        theta = np.linspace(np.pi / 8, 3 * np.pi, n)
-        x = np.cos(theta)
-        y = np.sin(theta)
+        theta = np.linspace(np.pi/8, 5*np.pi/2, n)
+        x = 4*np.cos(theta) - 2
+        y = 4*np.sin(theta) - 2
     
     # Create the n x 3 position array
     positions = np.column_stack((x, y))
