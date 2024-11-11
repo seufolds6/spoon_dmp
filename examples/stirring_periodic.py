@@ -15,7 +15,7 @@ y_track, dy_track, ddy_track = dmp.rollout()
 
 plt.figure(1, figsize=(6, 6))
 
-theta = np.linspace(np.pi/8, 5*np.pi/2, 100)
+theta = np.linspace(np.pi/6, 5*np.pi/2, 100)
 x = 4*np.cos(theta) - 2
 y = 4*np.sin(theta) - 2
 plt.plot(x, y, "r", lw=2, label="Demonstration")

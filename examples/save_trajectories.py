@@ -11,7 +11,7 @@ def save_traj(n, filename, task_name):
         x = np.linspace(-0.4, 2, n)
         y = -x*(x - 1)
     elif task_name == "stirring":
-        theta = np.linspace(np.pi/8, 5*np.pi/2, n)
+        theta = np.linspace(np.pi/6, 5*np.pi/2, n)
         x = 4*np.cos(theta) - 2
         y = 4*np.sin(theta) - 2
     
